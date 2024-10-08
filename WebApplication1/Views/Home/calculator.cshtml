@@ -1,6 +1,8 @@
+@using Microsoft.AspNetCore.Mvc.Diagnostics
 @{
     ViewBag.Title = "kalkulator";
     Layout = "_Layout";
     
 }
-<h1> </h1>
+<h1> @ViewBag.Title</h1>
+<h2>Wynik obliczen: @ViewBag.A @ViewBag.Operator @ViewBag.B = ViewBag.Result</h2>
