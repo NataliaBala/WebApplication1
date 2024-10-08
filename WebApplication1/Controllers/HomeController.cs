@@ -14,28 +14,36 @@ public class HomeController : Controller
         _logger = logger;
     }
 
-    public IActionResult calculator(string op, double? a, double? b)
+    public IActionResult calculator(Operator? op, double? a, double? b)
     {
         if (a is null || b is null)
         {
             ViewBag.ErrorMessage = "Niepoprawny format liczby w parametrze a lub b!";
             return View("CustomError");
         }
+
+        if (op is null)
+        {
+            ViewBag.ErrorMessage = "Nieznany operator!";
+            return View("CustomError");
+        }
+        
+        
         ViewBag.A = a;
         ViewBag.B = b;
         switch (op)
         {
-            case "add":
+            case Operator.add:
                 ViewBag.Result = a + b;
                 break;
-            case  "sub":
+            case  Operator.sub:
                 ViewBag.Result = a - b;
                 break;
-            case "div":
+            case Operator.div:
                 ViewBag.Result = a / b;
                 break;
                 
-                case "nul":
+                case Operator.nul:
                 ViewBag.Result = a * b;
                 break;
                 
@@ -58,4 +66,9 @@ public class HomeController : Controller
     {
         return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
     }
+}
+
+ public enum Operator
+{
+    add, sub, div, nul
 }
