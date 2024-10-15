@@ -1,7 +1,6 @@
-using System.Diagnostics;
-using System.Net.WebSockets;
+
 using Microsoft.AspNetCore.Mvc;
-using WebApplication1.Models;
+
 
 namespace WebApplication1.Controllers;
 
@@ -13,58 +12,71 @@ public class HomeController : Controller
     {
         _logger = logger;
     }
-    
+
 
     public IActionResult calculator(Operator? op, double? a, double? b)
     {
-        if (a is null || b is null)
+        if (a == null || b == null)
         {
             ViewBag.ErrorMessage = "Niepoprawny format liczby w parametrze a lub b!";
             return View("CustomError");
         }
 
-        if (op is null)
+        if (!op.HasValue)
         {
             ViewBag.ErrorMessage = "Nieznany operator!";
-            return View("CustomError");
+            return View("Calculator");
         }
-        
-        
+
+        ViewBag.Op = op;
         ViewBag.A = a;
         ViewBag.B = b;
         switch (op)
         {
-            case Operator.add:
+            case Operator.Add:
                 ViewBag.Result = a + b;
+                ViewBag.Operator = "+";
                 break;
-            case  Operator.sub:
+            case Operator.Sub:
                 ViewBag.Result = a - b;
+                ViewBag.Operator = "-";
                 break;
-            case Operator.div:
-                ViewBag.Result = a / b;
-                break;
-                
-                case Operator.nul:
+
+
+            case Operator.Mul:
                 ViewBag.Result = a * b;
+                ViewBag.Operator = "*";
                 break;
-                
+
+            case Operator.Div:
+                if (b == 0)
+                {
+                    ViewBag.ErrorMessage = "Nie można dzielić przez zero.";
+                    return View("CustomError");
+                }
+
+                ViewBag.Result = a / b;
+                ViewBag.Operator = "/";
+                break;
+            default:
+                ViewBag.ErrorMessage = "Nieznany operator!";
+                return View("CustomError");
+
 
         }
-        
-
-
 
         return View();
     }
-    public static int Age(DateTime birth, DateTime future)
+
+    public int Age(DateTime birth, DateTime future)
     {
         if (birth > future)
         {
             throw new ArgumentException("Data urodzenia nie może być późniejsza niż data przyszła.");
         }
-    
+
         int age = future.Year - birth.Year;
-    
+
         if (future < birth.AddYears(age))
         {
             age--;
@@ -72,19 +84,26 @@ public class HomeController : Controller
 
         return age;
     }
-    public IActionResult Privacy()
+
+    public IActionResult AgeCalculator(DateTime birth, DateTime future)
     {
-        return View();
+        try
+        {
+            int age = Age(birth, future);
+            ViewBag.Age = age;
+            return View(age);
+        }
+        catch (ArgumentException ex)
+        {
+            ViewBag.Error = ex.Message;
+            return View("Error");
+        }
     }
 
-    [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
-    public IActionResult Error()
-    {
-        return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
-    }
 }
 
- public enum Operator
+
+public enum Operator
 {
-    add, sub, div, nul
+    Unknown, Add, Mul, Sub, Div
 }
