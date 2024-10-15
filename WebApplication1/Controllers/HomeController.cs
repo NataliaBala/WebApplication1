@@ -1,8 +1,8 @@
-
+using System.Diagnostics;
 using Microsoft.AspNetCore.Mvc;
+using WebApplication1.Models;
 
-
-namespace WebApplication1.Controllers;
+namespace labyProgramowanie.Controllers;
 
 public class HomeController : Controller
 {
@@ -13,97 +13,19 @@ public class HomeController : Controller
         _logger = logger;
     }
 
-
-    public IActionResult calculator(Operator? op, double? a, double? b)
+    public IActionResult Index()
     {
-        if (a == null || b == null)
-        {
-            ViewBag.ErrorMessage = "Niepoprawny format liczby w parametrze a lub b!";
-            return View("CustomError");
-        }
-
-        if (!op.HasValue)
-        {
-            ViewBag.ErrorMessage = "Nieznany operator!";
-            return View("Calculator");
-        }
-
-        ViewBag.Op = op;
-        ViewBag.A = a;
-        ViewBag.B = b;
-        switch (op)
-        {
-            case Operator.Add:
-                ViewBag.Result = a + b;
-                ViewBag.Operator = "+";
-                break;
-            case Operator.Sub:
-                ViewBag.Result = a - b;
-                ViewBag.Operator = "-";
-                break;
-
-
-            case Operator.Mul:
-                ViewBag.Result = a * b;
-                ViewBag.Operator = "*";
-                break;
-
-            case Operator.Div:
-                if (b == 0)
-                {
-                    ViewBag.ErrorMessage = "Nie można dzielić przez zero.";
-                    return View("CustomError");
-                }
-
-                ViewBag.Result = a / b;
-                ViewBag.Operator = "/";
-                break;
-            default:
-                ViewBag.ErrorMessage = "Nieznany operator!";
-                return View("CustomError");
-
-
-        }
-
         return View();
     }
 
-    public int Age(DateTime birth, DateTime future)
+    public IActionResult Privacy()
     {
-        if (birth > future)
-        {
-            throw new ArgumentException("Data urodzenia nie może być późniejsza niż data przyszła.");
-        }
-
-        int age = future.Year - birth.Year;
-
-        if (future < birth.AddYears(age))
-        {
-            age--;
-        }
-
-        return age;
+        return View();
     }
 
-    public IActionResult AgeCalculator(DateTime birth, DateTime future)
+    [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
+    public IActionResult Error()
     {
-        try
-        {
-            int age = Age(birth, future);
-            ViewBag.Age = age;
-            return View(age);
-        }
-        catch (ArgumentException ex)
-        {
-            ViewBag.Error = ex.Message;
-            return View("Error");
-        }
+        return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
     }
-
-}
-
-
-public enum Operator
-{
-    Unknown, Add, Mul, Sub, Div
 }
