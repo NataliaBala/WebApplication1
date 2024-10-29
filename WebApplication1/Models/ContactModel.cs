@@ -27,5 +27,6 @@ public class ContactModel
     [Phone]
     [RegularExpression(pattern:"\\d\\d\\d-\\d\\d\\d-\\d\\d\\d", ErrorMessage = "Podaj według schematu: xxx-xxx-xxx")]
     public string PhoneNumber { get; set; }
-    
+
+    public object BirthDate { get; set; }
 }

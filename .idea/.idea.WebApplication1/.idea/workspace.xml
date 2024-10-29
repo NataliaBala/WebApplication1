@@ -10,12 +10,21 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6f807831-4120-42ea-8675-73184a6ae281" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/WebApplication1/Controllers/ContactController.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/WebApplication1/Models/ContactModel.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/WebApplication1/Views/Contact/Add.cshtml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/WebApplication1/Views/Contact/Index.cshtml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/WebApplication1/Controllers/BirthController.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/WebApplication1/Controllers/CalculatorController.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/WebApplication1/Models/Calculator.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/WebApplication1/Views/Calculator/Form.cshtml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/WebApplication1/Views/Calculator/Result.cshtml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/WebApplication1/Views/Contact/Details.cshtml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/WebApplication1/Views/Contact/Edit.cshtml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/WebApplication1/Views/Home/Calculator.cshtml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.WebApplication1/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.WebApplication1/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WebApplication1/Controllers/LabController.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebApplication1/Models/ContactModel.cs" beforeDir="false" afterPath="$PROJECT_DIR$/WebApplication1/Models/ContactModel.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebApplication1/Views/Home/About.cshtml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebApplication1/Views/Home/Kalkulator.cshtml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebApplication1/Views/Shared/CustomError.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/WebApplication1/Views/Shared/CustomError.cshtml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebApplication1/Views/Shared/_Layout.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/WebApplication1/Views/Shared/_Layout.cshtml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebApplication1/WebApplication1.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/WebApplication1/WebApplication1.csproj" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -58,7 +67,7 @@
     ".NET Launch Settings Profile.WebApplication1: http.executor": "Run",
     ".NET Launch Settings Profile.WebApplication1: https.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "lab3",
+    "git-widget-placeholder": "master",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
