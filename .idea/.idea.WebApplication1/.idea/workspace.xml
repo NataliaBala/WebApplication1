@@ -9,23 +9,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6f807831-4120-42ea-8675-73184a6ae281" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/WebApplication1/Controllers/BirthController.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/WebApplication1/Controllers/CalculatorController.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/WebApplication1/Models/Calculator.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/WebApplication1/Views/Calculator/Form.cshtml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/WebApplication1/Views/Calculator/Result.cshtml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/WebApplication1/Views/Contact/Details.cshtml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/WebApplication1/Views/Contact/Edit.cshtml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/WebApplication1/Views/Home/Calculator.cshtml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.WebApplication1/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.WebApplication1/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WebApplication1/Models/ContactModel.cs" beforeDir="false" afterPath="$PROJECT_DIR$/WebApplication1/Models/ContactModel.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WebApplication1/Views/Home/About.cshtml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/WebApplication1/Views/Home/Kalkulator.cshtml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/WebApplication1/Views/Shared/CustomError.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/WebApplication1/Views/Shared/CustomError.cshtml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WebApplication1/Views/Shared/_Layout.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/WebApplication1/Views/Shared/_Layout.cshtml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WebApplication1/WebApplication1.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/WebApplication1/WebApplication1.csproj" afterDir="false" />
-    </list>
+    <list default="true" id="6f807831-4120-42ea-8675-73184a6ae281" name="Changes" comment="lab3" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -206,7 +190,15 @@
       <option name="project" value="LOCAL" />
       <updated>1729003437071</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="lab3">
+      <option name="closed" value="true" />
+      <created>1730215828214</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1730215828214</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -223,6 +215,7 @@
     <MESSAGE value="testy" />
     <MESSAGE value="dziala" />
     <MESSAGE value="idk" />
-    <option name="LAST_COMMIT_MESSAGE" value="idk" />
+    <MESSAGE value="lab3" />
+    <option name="LAST_COMMIT_MESSAGE" value="lab3" />
   </component>
 </project>
