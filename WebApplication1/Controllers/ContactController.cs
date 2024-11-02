@@ -1,59 +1,67 @@
 using Microsoft.AspNetCore.Mvc;
 using WebApplication1.Models;
+using WebApplication1.Models.Services;
 
-namespace WebApplication1.Controllers;
-
-public class ContactController : Controller
+namespace WebApplication1.Controllers
 {
-    private static Dictionary<int, ContactModel> _contacts = new()
-
+    public class ContactController : Controller
     {
+        private readonly IContactService _contactService;
+
+        public ContactController(IContactService contactService)
         {
-            1, new ContactModel()
+            _contactService = contactService;
+        }
+
+        // Lista kontaktów 
+        public ActionResult Index()
+        {
+            return View(_contactService.GetAll());
+        }
+        
+        //Dodanie kontaktu formularz 
+        public ActionResult Add()
+        {
+            return View();
+        }
+
+        //Odebranie danych z formularza i zapisanie w kontaktach
+        [HttpPost]
+        public ActionResult Add(ContactModel model)
+        {
+            if (!ModelState.IsValid)
             {
-
-                Id = 1,
-                FirstName = "Adam",
-                LastName = "Abecki",
-                Email = "Adam@abecki.com",
-                BirthDay = new DateOnly(year: 1999, month: 10, day: 10),
-                PhoneNumber = "222-444-555"
-
+                return View(model);   
             }
 
+            _contactService.Add(model);
+            return View("Index");
         }
 
-    };
-
-    private static int currentId = 3;
-
-
-
-    // Lista kontaktów
-    public IActionResult Index()
-    {
-        return View(_contacts);
-    }
-
-//Fromularz dodania kontaktow
-[HttpGet]
-    public IActionResult Add()
-    {
-        return View();
-    }
-    
-    
-    [HttpPost]
-    public IActionResult Add(ContactModel model)
-    {
-        if (!ModelState.IsValid)
+        public ActionResult Delete(int id)
         {
-            return View(model);
+            _contactService.Delete(id);
+            return View("Index");
         }
 
-        model.Id = ++currentId;
-        _contacts.Add(model.Id, model);
-        return View("Index", _contacts);
+        public ActionResult Details(int id)
+        {
+            return View(_contactService.GetById(id));
+        }
+        
+        public ActionResult Edit(int id)
+        {
+            return View(_contactService.GetById(id));
+        }
+        [HttpPost]
+        public ActionResult Edit(ContactModel model)
+        {
+            if (!ModelState.IsValid)
+            {
+                return View(model);
+            }
+            _contactService.Update(model);
+            return View("Index");
+        }
     }
-
 }
