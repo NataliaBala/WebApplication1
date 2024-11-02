@@ -8,13 +8,13 @@ public class ContactModel
     [HiddenInput]
     public int Id { get; set; }
     
-    [Required(ErrorMessage = "Musisz wpisać bo tak!")]
-    [MaxLength(length: 20, ErrorMessage = "Co tak dużo znaków??!!")]
+    [Required(ErrorMessage = "Musisz wpisać!")]
+    [MaxLength(length: 20, ErrorMessage = "Za dużo znaków znaków??!!")]
     [Display(Name = "Imię")]
     public string FirstName { get; set; }
     
-    [Required(ErrorMessage = "Musisz wpisać bo tak!")]
-    [MaxLength(length: 50, ErrorMessage = "Co tak dużo znaków??!!")]
+    [Required(ErrorMessage = "Musisz wpisać!")]
+    [MaxLength(length: 50, ErrorMessage = "Za dużo znaków znaków??!!")]
     [Display(Name = "Nazwisko")]
     public string LastName { get; set; }
     
