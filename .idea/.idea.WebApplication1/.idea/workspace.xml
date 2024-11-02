@@ -9,7 +9,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6f807831-4120-42ea-8675-73184a6ae281" name="Changes" comment="lab3" />
+    <list default="true" id="6f807831-4120-42ea-8675-73184a6ae281" name="Changes" comment="Lab4">
+      <change afterPath="$PROJECT_DIR$/WebApplication1/Views/Birth/Form.cshtml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.WebApplication1/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.WebApplication1/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebApplication1/Models/ContactModel.cs" beforeDir="false" afterPath="$PROJECT_DIR$/WebApplication1/Models/ContactModel.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebApplication1/Views/Contact/Add.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/WebApplication1/Views/Contact/Add.cshtml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebApplication1/Views/Contact/Edit.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/WebApplication1/Views/Contact/Edit.cshtml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -18,7 +24,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="lab1" />
+        <entry key="$PROJECT_DIR$" value="master" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -32,7 +38,7 @@
   <component name="GithubPullRequestsUISettings">{
   &quot;selectedUrlAndAccountId&quot;: {
     &quot;url&quot;: &quot;https://github.com/NataliaBala/WebApplication1.git&quot;,
-    &quot;accountId&quot;: &quot;caf7a534-0403-4b9f-ad89-7a978da537e2&quot;
+    &quot;accountId&quot;: &quot;ba283d80-c51c-45fc-810b-21b6308cb95c&quot;
   }
 }</component>
   <component name="MetaFilesCheckinStateConfiguration" checkMetaFiles="true" />
@@ -45,28 +51,21 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    ".NET Launch Settings Profile.WebApplication1: IIS Express.executor": "Run",
-    ".NET Launch Settings Profile.WebApplication1: http.executor": "Run",
-    ".NET Launch Settings Profile.WebApplication1: https.executor": "Run",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "master",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "vue.rearranger.settings.migration": "true"
-  },
-  "keyToStringList": {
-    "rider.external.source.directories": [
-      "D:\\Users\\natalia.bala\\AppData\\Roaming\\JetBrains\\Rider2024.1\\resharper-host\\DecompilerCache",
-      "D:\\Users\\natalia.bala\\AppData\\Roaming\\JetBrains\\Rider2024.1\\resharper-host\\SourcesCache",
-      "D:\\Users\\natalia.bala\\AppData\\Local\\Symbols\\src"
-    ]
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;.NET Launch Settings Profile.WebApplication1: IIS Express.executor&quot;: &quot;Run&quot;,
+    &quot;.NET Launch Settings Profile.WebApplication1: http.executor&quot;: &quot;Run&quot;,
+    &quot;.NET Launch Settings Profile.WebApplication1: https.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;Lab4&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RunManager" selected=".NET Launch Settings Profile.WebApplication1: http">
     <configuration name="WebApplication1: IIS Express" type="LaunchSettings" factoryName=".NET Launch Settings Profile">
       <option name="LAUNCH_PROFILE_PROJECT_FILE_PATH" value="$PROJECT_DIR$/WebApplication1/WebApplication1.csproj" />
@@ -125,6 +124,8 @@
       <workItem from="1728393755611" duration="5023000" />
       <workItem from="1728998700828" duration="4717000" />
       <workItem from="1729603265342" duration="4866000" />
+      <workItem from="1730541736757" duration="55000" />
+      <workItem from="1730541866858" duration="2415000" />
     </task>
     <task id="LOCAL-00001" summary="test">
       <option name="closed" value="true" />
@@ -198,7 +199,23 @@
       <option name="project" value="LOCAL" />
       <updated>1730215828214</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="test">
+      <option name="closed" value="true" />
+      <created>1730215874244</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1730215874244</updated>
+    </task>
+    <task id="LOCAL-00011" summary="Lab4">
+      <option name="closed" value="true" />
+      <created>1730543251138</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1730543251138</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -211,11 +228,12 @@
     <MESSAGE value="lab1" />
     <MESSAGE value="KALKULATOR" />
     <MESSAGE value="test1" />
-    <MESSAGE value="test" />
     <MESSAGE value="testy" />
     <MESSAGE value="dziala" />
     <MESSAGE value="idk" />
     <MESSAGE value="lab3" />
-    <option name="LAST_COMMIT_MESSAGE" value="lab3" />
+    <MESSAGE value="test" />
+    <MESSAGE value="Lab4" />
+    <option name="LAST_COMMIT_MESSAGE" value="Lab4" />
   </component>
 </project>
