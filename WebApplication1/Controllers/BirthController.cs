@@ -1,34 +1,26 @@
 using Microsoft.AspNetCore.Mvc;
 using WebApplication1.Models;
 
-namespace WebApplication1.Controllers;
-
-public class BirthController: Controller
+namespace WebApplication1.Controllers
 {
-    public IActionResult Index()
+    public class BirthController : Controller
     {
-        return View();
-    }
-    
-    [HttpPost]
-    public IActionResult Result([FromForm] Birth model)
-    {
-        if (!model.isValid())
+        // Wyświetla formularz
+        public IActionResult Form()
         {
-            ViewBag.ErrorMessage = "Brak imienia";
-            return View("CustomError");
+            return View();
         }
 
-        if (model.Years < 0)
+        [HttpPost]
+        public IActionResult Result([FromForm] Birth model)
         {
-            ViewBag.ErrorMessage = "nie możesz mieć przyszłej daty urodzenia";
-            return View("CustomError");
+            if (!model.IsValid())
+            {
+                ViewBag.ErrorMessage = "Niepoprawne dane. Upewnij się, że imię, nazwisko zostały podane, a data urodzenia jest wcześniejsza od daty bieżącej.";
+                return View("CustomError");
+            }
+
+            return View(model);
         }
-        return View(model);
     }
-    public IActionResult Form()
-    {
-        return View();
-    }
-    
 }
