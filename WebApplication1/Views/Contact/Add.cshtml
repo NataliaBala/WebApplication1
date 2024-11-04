@@ -34,8 +34,11 @@ Layout = "_Layout";
     </div>
     <div class="mb-3">
         <label class="form-label" asp-for="Category">Kategoria</label>
-        <select class="form-control" asp-items="@Html.GetEnumSelectList<CategoryModel>()"
-                asp-for="Category"></select>
+        <<select
+            class="form-control"
+            asp-for="Category"
+            asp-items="@Html.GetEnumSelectList<Category>()">
+        </select>
         <span asp-validation-for="Category" class="text-danger"></span>
     </div>
     <button type="submit" class="btn btn-outline-primary">Dodaj</button>

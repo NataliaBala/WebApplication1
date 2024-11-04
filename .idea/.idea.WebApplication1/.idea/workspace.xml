@@ -9,27 +9,44 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6f807831-4120-42ea-8675-73184a6ae281" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/WebApplication1/Controllers/BookController.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/WebApplication1/Models/Book.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/WebApplication1/Models/Priority.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/WebApplication1/Views/Book/Form.cshtml" afterDir="false" />
+    <list default="true" id="6f807831-4120-42ea-8675-73184a6ae281" name="Changes" comment="poprawone">
+      <change afterPath="$PROJECT_DIR$/WebApplication1/Models/Category.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/WebApplication1/Views/Contact/Details.cshtml.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/WebApplication1/Views/Contact/Edit.cshtml.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.WebApplication1/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.WebApplication1/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WebApplication1/Controllers/BirthController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/WebApplication1/Controllers/BirthController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WebApplication1/Models/CategoryModel.cs" beforeDir="false" afterPath="$PROJECT_DIR$/WebApplication1/Models/CategoryModel.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebApplication1/Controllers/BirthController.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebApplication1/Controllers/BookController.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebApplication1/Controllers/CalculatorController.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebApplication1/Controllers/ContactController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/WebApplication1/Controllers/ContactController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebApplication1/Controllers/HomeController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/WebApplication1/Controllers/HomeController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebApplication1/Models/Book.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebApplication1/Models/Calculator.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebApplication1/Models/CategoryModel.cs" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/WebApplication1/Models/ContactModel.cs" beforeDir="false" afterPath="$PROJECT_DIR$/WebApplication1/Models/ContactModel.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/WebApplication1/Models/EnumExtensions.cs" beforeDir="false" afterPath="$PROJECT_DIR$/WebApplication1/Models/EnumExtensions.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebApplication1/Models/Priority.cs" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/WebApplication1/Models/Services/IContactService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/WebApplication1/Models/Services/IContactService.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/WebApplication1/Models/Services/MemoryContactService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/WebApplication1/Models/Services/MemoryContactService.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WebApplication1/Views/Contact/Details.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/WebApplication1/Views/Contact/Details.cshtml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebApplication1/Views/Birth/Form.cshtml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebApplication1/Views/Birth/Result.cshtml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebApplication1/Views/Book/Form.cshtml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebApplication1/Views/Calculator/Form.cshtml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebApplication1/Views/Calculator/Result.cshtml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebApplication1/Views/Contact/Add.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/WebApplication1/Views/Contact/Add.cshtml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/WebApplication1/Views/Contact/Edit.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/WebApplication1/Views/Contact/Edit.cshtml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/WebApplication1/Views/Contact/Index.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/WebApplication1/Views/Contact/Index.cshtml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebApplication1/Views/Home/Index.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/WebApplication1/Views/Home/Index.cshtml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebApplication1/Views/Home/Privacy.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/WebApplication1/Views/Home/Privacy.cshtml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebApplication1/Views/Shared/_Layout.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/WebApplication1/Views/Shared/_Layout.cshtml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/WebApplication1/WebApplication1.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/WebApplication1/WebApplication1.csproj" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="DpaMonitoringSettings">
+    <option name="autoShow" value="false" />
   </component>
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
@@ -67,7 +84,7 @@
     &quot;.NET Launch Settings Profile.WebApplication1: http.executor&quot;: &quot;Run&quot;,
     &quot;.NET Launch Settings Profile.WebApplication1: https.executor&quot;: &quot;Run&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;#2 on Lab4&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;#3 on Lab4.1&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
@@ -137,7 +154,8 @@
       <workItem from="1730541736757" duration="55000" />
       <workItem from="1730541866858" duration="2678000" />
       <workItem from="1730544576132" duration="1511000" />
-      <workItem from="1730747334834" duration="4139000" />
+      <workItem from="1730747334834" duration="7703000" />
+      <workItem from="1730756508097" duration="965000" />
     </task>
     <task id="LOCAL-00001" summary="test">
       <option name="closed" value="true" />
@@ -235,7 +253,15 @@
       <option name="project" value="LOCAL" />
       <updated>1730544502875</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="poprawone">
+      <option name="closed" value="true" />
+      <created>1730751790049</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1730751790049</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -255,6 +281,7 @@
     <MESSAGE value="test" />
     <MESSAGE value="Lab4" />
     <MESSAGE value="lab4" />
-    <option name="LAST_COMMIT_MESSAGE" value="lab4" />
+    <MESSAGE value="poprawone" />
+    <option name="LAST_COMMIT_MESSAGE" value="poprawone" />
   </component>
 </project>

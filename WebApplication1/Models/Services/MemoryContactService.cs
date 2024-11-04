@@ -1,29 +1,65 @@
 namespace WebApplication1.Models.Services;
 
-public class MemoryContactService :IContactService
+public class MemoryContactService : IContactService
 {
-    private Dictionary<int, ContactModel> _contacts = new Dictionary<int, ContactModel>()
+    private Dictionary<int, ContactModel> _contacts = new()
     {
-        {1, new(){Id = 1, Email = "wsei@gmail.com", FirstName = "Michał", LastName = "Brokuł", Category = CategoryModel.Family, BirthDate = new DateOnly(2010, 05, 12), PhoneNumber = "444 444 444"}},
-        {2, new(){Id = 2, Email = "jahybhds@gmail.com", FirstName = "Maja", LastName = "Kowalsk",Category = CategoryModel.Family, BirthDate = new DateOnly(1950, 12, 27), PhoneNumber = "777 444 333"}}, 
-        {3, new(){Id = 3, Email = "huhagddn@gmail.com", FirstName = "Emilia", LastName = "Zupa",Category = CategoryModel.Friend , BirthDate = new DateOnly(1990, 10, 10), PhoneNumber = "111 222 333"}}
+        {
+            1,
+            new ContactModel
+            {
+                Id = 1,
+                FirstName = "Michał",
+                LastName = "Brokuł",
+                Email = "michał@wsei.edu.pl",
+                Category = Category.Friend,
+                BirthDate = new DateOnly(2005, 03, 25),
+                PhoneNumber = "555 333 222"
+            }
+        },
+        {
+            2, 
+            new ContactModel()
+            {
+                Id = 1,
+                FirstName = "Maja",
+                LastName = "Zupa",
+                Category = Category.Business,
+                Email = "Maja@wsei.edu.pl",
+                BirthDate = new DateOnly(1999, 05, 12),
+                PhoneNumber = "555 666 777"
+            }
+        },
+        {
+            3, 
+            new ContactModel()
+            {
+                Id = 1,
+                FirstName = "Emilia",
+                LastName = "Borówka",
+                Email = "Emilia@wsei.edu.pl",
+                Category = Category.Family,
+                BirthDate = new DateOnly(2023, 05, 31),
+                PhoneNumber = "666 777 888"
+            }
+        }
+
     };
 
-    private static int _index = 3;//currentId = _contacts.Count;
+    private int _index = 3;
+
     public void Add(ContactModel model)
     {
         model.Id = ++_index;
         _contacts.Add(model.Id, model);
     }
 
-    public void Update(ContactModel contact)
+    public void Update(ContactModel model)
     {
-        if (_contacts.ContainsKey(contact.Id))
+        if (_contacts.ContainsKey(model.Id))
         {
-            _contacts[contact.Id] = contact;  
+            _contacts[model.Id] = model;
         }
-
-        //_contacts[contact.Id] = contact;
     }
 
     public void Delete(int id)
@@ -36,7 +72,7 @@ public class MemoryContactService :IContactService
         return _contacts.Values.ToList();
     }
 
-    public ContactModel GetById(int id)
+    public ContactModel? GetById(int id)
     {
         return _contacts[id];
     }
