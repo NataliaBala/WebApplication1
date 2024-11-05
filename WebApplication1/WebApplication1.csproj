@@ -11,6 +11,13 @@
       <_ContentIncludedByDefault Remove="Views\Birth\Result.cshtml" />
       <_ContentIncludedByDefault Remove="Models\Birth\Form.cshtml" />
       <_ContentIncludedByDefault Remove="Models\Birth\Result.cshtml" />
+      <_ContentIncludedByDefault Remove="Views\Book\Form.cshtml" />
+      <_ContentIncludedByDefault Remove="Views\Calculator\Form.cshtml" />
+      <_ContentIncludedByDefault Remove="Views\Calculator\Result.cshtml" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <Folder Include="Areas\model\" />
     </ItemGroup>
 
 </Project>

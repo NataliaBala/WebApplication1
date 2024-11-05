@@ -1,8 +1,10 @@
+using WebApplication1.Models.Services;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();
-
+builder.Services.AddSingleton<IContactService, MemoryContactService>();
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
@@ -21,17 +23,7 @@ app.UseRouting();
 app.UseAuthorization();
 
 app.MapControllerRoute(
-    name: "lab1",
-    pattern: "lab1/{action=Index}/{id?}",
-    defaults: new { controller = "Lab1" });
-
-app.MapControllerRoute(
     name: "default",
     pattern: "{controller=Home}/{action=Index}/{id?}");
-
-app.MapControllerRoute(
-    name: "calculateAge",
-    pattern: "Lab1/AgeCalculator",
-    defaults: new { controller = "Lab1", action = "AgeCalculator" });
 
 app.Run();
