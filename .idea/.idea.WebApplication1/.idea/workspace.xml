@@ -10,13 +10,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6f807831-4120-42ea-8675-73184a6ae281" name="Changes" comment="laby">
-      <change afterPath="$PROJECT_DIR$/WebApplication1/Models/AppDbContext.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/WebApplication1/Models/ContactEntity.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/WebApplication1/Models/ContactMapper.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/WebApplication1/Models/Services/EFContactService.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.WebApplication1/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.WebApplication1/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WebApplication1/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/WebApplication1/Program.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WebApplication1/WebApplication1.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/WebApplication1/WebApplication1.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebApplication1/Models/AppDbContext.cs" beforeDir="false" afterPath="$PROJECT_DIR$/WebApplication1/Models/AppDbContext.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -135,7 +130,7 @@
       <workItem from="1730747334834" duration="7703000" />
       <workItem from="1730756508097" duration="1362000" />
       <workItem from="1730803952633" duration="363000" />
-      <workItem from="1730816603884" duration="3971000" />
+      <workItem from="1730816603884" duration="4771000" />
     </task>
     <task id="LOCAL-00001" summary="test">
       <option name="closed" value="true" />
@@ -249,7 +244,15 @@
       <option name="project" value="LOCAL" />
       <updated>1730757646867</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="laby">
+      <option name="closed" value="true" />
+      <created>1730820674622</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1730820674629</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

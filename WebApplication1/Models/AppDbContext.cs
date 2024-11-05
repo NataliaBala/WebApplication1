@@ -8,7 +8,7 @@ public class AppDbContext: DbContext
 {
     public DbSet<ContactEntity> Contacts { get; set; }
 public string DbPath { get; set; }
-    protected AppDbContext()
+    public AppDbContext()
     {
         var folder = Environment.SpecialFolder.LocalApplicationData;
         var path = Environment.GetFolderPath(folder);
@@ -32,16 +32,17 @@ public string DbPath { get; set; }
             LastName = "Doe",
             BirthDate = new DateOnly(2000, 12, 20),
             PhoneNumber = "333 444 555",
-           // Email = @.com
+           Email = "zuza@gmail.com",
                 
                 },
             new ContactEntity()
             {
-                Id = 1,
+                Id = 2,
                 FirstName = "John",
                 LastName = "Doooe",
                 BirthDate = new DateOnly(2000, 12, 20),
                 PhoneNumber = "222 333 444" ,
+                Email = "zuzaaaa@gmail.com",
                 
             }
             
