@@ -1,25 +1,26 @@
 using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 using Microsoft.AspNetCore.Mvc;
 
 namespace WebApplication1.Models;
-
-public class ContactModel
+[Table(name: "Contact")]
+public class ContactEntity
 {
-    [HiddenInput]
+    
     public int Id { get; set; }
     
-    [Required(ErrorMessage = "Musisz wpisać!")]
-    [MaxLength(length: 20, ErrorMessage = "Za dużo znaków znaków??!!")]
-    [Display(Name = "Imię")]
+    [Required]
+    [MaxLength(length: 20)]
+    [MinLength(length: 2)]
+    
     public string FirstName { get; set; }
     
-    [Required(ErrorMessage = "Musisz wpisać!")]
-    [MaxLength(length: 50, ErrorMessage = "Za dużo znaków znaków??!!")]
-    [Display(Name = "Nazwisko")]
+    [MaxLength(length: 20)]
+    [MinLength(length: 2)]
     public string LastName { get; set; }
     
-    [EmailAddress(ErrorMessage = "Zły email!")]
-    [Display(Name = "Email")]
+    [MaxLength(length: 20)]
+    [MinLength(length: 2)]
     public string Email { get; set; }
     
     [Phone(ErrorMessage = "Zły numer telefonu!!")]
@@ -32,4 +33,6 @@ public class ContactModel
     public DateOnly BirthDate { get; set; }
     
     public Category Category { get; set; }
+    
+    public DateTime Created { get; set; }
 }
