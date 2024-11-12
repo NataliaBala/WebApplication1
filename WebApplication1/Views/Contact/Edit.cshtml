@@ -1,8 +1,8 @@
-@model ContactModel
+@model WebApplication1.Models.ContactModel
 
 @{
-    ViewBag.Title = "title";
-    Layout = "_Layout";
+ViewBag.Title = "title";
+Layout = "_Layout";
 }
 
 <h2>Edytuj Kontakt</h2>
@@ -31,9 +31,17 @@
         <label class="form-label" asp-for="BirthDate">Data urodzenia</label>
         <input class="form-control" asp-for="BirthDate"/>
         <span asp-validation-for="BirthDate" class="text-danger"></span>
-
     </div>
-    <button type="submit" class="btn btn-outline-primary">Zapisz zmiany</button>
+    <div class="mb-3">
+        <label class="form-label" asp-for="Category">Kategoria</label>
+        <select
+            class="form-control"
+            asp-for="Category"
+            asp-items="@Html.GetEnumSelectList<Category>()">
+        </select>
+        <span asp-validation-for="Category" class="text-danger"></span>
+    </div>
+    <button type="submit" class="btn btn-outline-primary">Dodaj</button>
 
 
 </form>

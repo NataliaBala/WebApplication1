@@ -2,7 +2,7 @@ using System.Diagnostics;
 using Microsoft.AspNetCore.Mvc;
 using WebApplication1.Models;
 
-namespace labyProgramowanie.Controllers;
+namespace WebApplication1.Controllers;
 
 public class HomeController : Controller
 {
@@ -12,7 +12,69 @@ public class HomeController : Controller
     {
         _logger = logger;
     }
+    public IActionResult About()
+    {
+        return View();
+    }
+    
+    public IActionResult Calculator(Operators? op, double? a, double? b)
+    {
+        // var op = Request.Query["op"];
+        // var a = double.Parse(Request.Query["a"]);
+        // var b = double.Parse(Request.Query["b"]);
+        if (a is null || b is null)
+        {
+            ViewBag.ErrorMessage = "Niepoprawny format liczby w parametrze a lub b!!!";
+            return View("CustomError");
+        }
 
+        if (op is null)
+        {
+            ViewBag.ErrorMessage = "Nieznany operator!!!";
+            return View("CustomError");
+        }
+    
+        ViewBag.A = a;
+        ViewBag.B = b;
+        switch (op)
+        {
+            case Operators.Add:
+                ViewBag.Result = a + b;
+                ViewBag.Operator = "+";
+                break;
+            case Operators.Sub:
+                ViewBag.Result = a - b;
+                ViewBag.Operator = "-";
+                break;
+            case Operators.Div:
+                ViewBag.Result = a / b;
+                ViewBag.Operator = "/";
+                break;
+            case Operators.Mul:
+                ViewBag.Result = a * b;
+                ViewBag.Operator = "*";
+                break;
+        }
+
+        return View();
+    }
+
+    public IActionResult Age( DateTime datauro, DateTime datatera)
+    {
+        ViewBag.urodziny = datauro;
+        ViewBag.teraz = datatera;
+        int age =datatera.Year - datauro.Year ;
+        if (datatera.Month < datauro.Month)
+        {
+            age --;
+        }
+
+        ViewBag.Result = age;
+        
+        
+
+        return View();
+    }
     public IActionResult Index()
     {
         return View();
@@ -28,4 +90,12 @@ public class HomeController : Controller
     {
         return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
     }
+}
+
+public enum Operators
+{
+    Add,
+    Sub,
+    Div,
+    Mul
 }

@@ -9,16 +9,22 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6f807831-4120-42ea-8675-73184a6ae281" name="Changes" comment="lab3" />
+    <list default="true" id="6f807831-4120-42ea-8675-73184a6ae281" name="Changes" comment="laby">
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.WebApplication1/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.WebApplication1/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebApplication1/Models/AppDbContext.cs" beforeDir="false" afterPath="$PROJECT_DIR$/WebApplication1/Models/AppDbContext.cs" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="DpaMonitoringSettings">
+    <option name="autoShow" value="false" />
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="lab1" />
+        <entry key="$PROJECT_DIR$" value="Lab4.1" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -32,7 +38,7 @@
   <component name="GithubPullRequestsUISettings">{
   &quot;selectedUrlAndAccountId&quot;: {
     &quot;url&quot;: &quot;https://github.com/NataliaBala/WebApplication1.git&quot;,
-    &quot;accountId&quot;: &quot;caf7a534-0403-4b9f-ad89-7a978da537e2&quot;
+    &quot;accountId&quot;: &quot;ba283d80-c51c-45fc-810b-21b6308cb95c&quot;
   }
 }</component>
   <component name="MetaFilesCheckinStateConfiguration" checkMetaFiles="true" />
@@ -51,20 +57,13 @@
     ".NET Launch Settings Profile.WebApplication1: http.executor": "Run",
     ".NET Launch Settings Profile.WebApplication1: https.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "master",
+    "git-widget-placeholder": "Lab5",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
     "vue.rearranger.settings.migration": "true"
-  },
-  "keyToStringList": {
-    "rider.external.source.directories": [
-      "D:\\Users\\natalia.bala\\AppData\\Roaming\\JetBrains\\Rider2024.1\\resharper-host\\DecompilerCache",
-      "D:\\Users\\natalia.bala\\AppData\\Roaming\\JetBrains\\Rider2024.1\\resharper-host\\SourcesCache",
-      "D:\\Users\\natalia.bala\\AppData\\Local\\Symbols\\src"
-    ]
   }
 }]]></component>
   <component name="RunManager" selected=".NET Launch Settings Profile.WebApplication1: http">
@@ -125,6 +124,13 @@
       <workItem from="1728393755611" duration="5023000" />
       <workItem from="1728998700828" duration="4717000" />
       <workItem from="1729603265342" duration="4866000" />
+      <workItem from="1730541736757" duration="55000" />
+      <workItem from="1730541866858" duration="2678000" />
+      <workItem from="1730544576132" duration="1511000" />
+      <workItem from="1730747334834" duration="7703000" />
+      <workItem from="1730756508097" duration="1362000" />
+      <workItem from="1730803952633" duration="363000" />
+      <workItem from="1730816603884" duration="4771000" />
     </task>
     <task id="LOCAL-00001" summary="test">
       <option name="closed" value="true" />
@@ -198,7 +204,55 @@
       <option name="project" value="LOCAL" />
       <updated>1730215828214</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="test">
+      <option name="closed" value="true" />
+      <created>1730215874244</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1730215874244</updated>
+    </task>
+    <task id="LOCAL-00011" summary="Lab4">
+      <option name="closed" value="true" />
+      <created>1730543251138</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1730543251138</updated>
+    </task>
+    <task id="LOCAL-00012" summary="lab4">
+      <option name="closed" value="true" />
+      <created>1730544502875</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1730544502875</updated>
+    </task>
+    <task id="LOCAL-00013" summary="poprawone">
+      <option name="closed" value="true" />
+      <created>1730751790049</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1730751790049</updated>
+    </task>
+    <task id="LOCAL-00014" summary="Poprawka">
+      <option name="closed" value="true" />
+      <created>1730757646867</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1730757646867</updated>
+    </task>
+    <task id="LOCAL-00015" summary="laby">
+      <option name="closed" value="true" />
+      <created>1730820674622</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1730820674629</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -211,11 +265,16 @@
     <MESSAGE value="lab1" />
     <MESSAGE value="KALKULATOR" />
     <MESSAGE value="test1" />
-    <MESSAGE value="test" />
     <MESSAGE value="testy" />
     <MESSAGE value="dziala" />
     <MESSAGE value="idk" />
     <MESSAGE value="lab3" />
-    <option name="LAST_COMMIT_MESSAGE" value="lab3" />
+    <MESSAGE value="test" />
+    <MESSAGE value="Lab4" />
+    <MESSAGE value="lab4" />
+    <MESSAGE value="poprawone" />
+    <MESSAGE value="Poprawka" />
+    <MESSAGE value="laby" />
+    <option name="LAST_COMMIT_MESSAGE" value="laby" />
   </component>
 </project>
