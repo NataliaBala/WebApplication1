@@ -1,6 +1,7 @@
 using WebApplication1.Models;
 using WebApplication1.Models.Services;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Mvc.Rendering;
 
 namespace WebApplication1.Controllers;
 
@@ -22,7 +23,17 @@ public class ContactController : Controller
     //Formularz dodania kontaktu
     public IActionResult Add()
     {
-        return View();
+        var model = new ContactModel();
+        model.Organizations = _contactService.GetOrganizations();
+            .Select (i:OrganizationEntity => new SelectListItem)
+        {
+            Value = i.Id.ToString(),
+                Text = i.Name,
+                    Selected = i.Id == 1
+        })
+        
+        .ToList()
+        return View(model);
     }
     [HttpPost]
     //Odebranie i zapisanie nowego kontaktu
