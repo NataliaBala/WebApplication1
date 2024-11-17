@@ -33,7 +33,7 @@ public class ContactModel
     [Display(Name = "Data urodzenia")]
     public DateOnly BirthDate { get; set; }
     
-    public Category Category { get; set; }
+    public CategoryModel Category { get; set; }
     
     
     public int OrganizationId { get; set; }

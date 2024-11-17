@@ -37,7 +37,7 @@ Layout = "_Layout";
         <select
             class="form-control"
             asp-for="Category"
-            asp-items="@Html.GetEnumSelectList<Category>()">
+            asp-items="@Html.GetEnumSelectList<CategoryModel>()">
         </select>
         <span asp-validation-for="Category" class="text-danger"></span>
     </div>

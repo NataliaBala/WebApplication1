@@ -5,9 +5,8 @@ var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();
-builder.Services.AddSingleton<IContactService, MemoryContactService>();
-builder.Services.AddDbContext<AppDbContext>(); 
-builder.Services.AddTransient<IContactService, EFContactService>();
+builder.Services.AddDbContext<AppDbContext>();
+builder.Services.AddTransient<IContactServices, EFContactService>();
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.

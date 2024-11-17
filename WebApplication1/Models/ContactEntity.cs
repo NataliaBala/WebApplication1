@@ -32,7 +32,7 @@ public class ContactEntity
     [Display(Name = "Data urodzenia")]
     public DateOnly BirthDate { get; set; }
     
-    public Category Category { get; set; }
+    public CategoryModel Category { get; set; }
     
     public DateTime Created { get; set; }
     
