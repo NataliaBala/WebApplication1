@@ -12,12 +12,12 @@ namespace WebApplication1.Models.Services
                 1, new ContactModel()
                 {
                     Id = 1,
-                    FirstName = "Adam",
-                    LastName = "Placek", 
-                    Email = "adam@wsei.edu.pl",
+                    FirstName = "Magda",
+                    LastName = "Worek", 
+                    Email = "Magda@wsei.edu.pl",
                     Category = CategoryModel.Family,
                     BirthDate = new DateOnly(2002, 9, 10),
-                    PhoneNumber = "999 999 999"
+                    PhoneNumber = "999 888 929"
                 }
             },
             {
