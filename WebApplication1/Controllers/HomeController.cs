@@ -12,72 +12,87 @@ public class HomeController : Controller
     {
         _logger = logger;
     }
-    public IActionResult About()
-    {
-        return View();
-    }
-    
-    public IActionResult Calculator(Operators? op, double? a, double? b)
-    {
-        // var op = Request.Query["op"];
-        // var a = double.Parse(Request.Query["a"]);
-        // var b = double.Parse(Request.Query["b"]);
-        if (a is null || b is null)
-        {
-            ViewBag.ErrorMessage = "Niepoprawny format liczby w parametrze a lub b!!!";
-            return View("CustomError");
-        }
 
-        if (op is null)
-        {
-            ViewBag.ErrorMessage = "Nieznany operator!!!";
-            return View("CustomError");
-        }
-    
-        ViewBag.A = a;
-        ViewBag.B = b;
-        switch (op)
-        {
-            case Operators.Add:
-                ViewBag.Result = a + b;
-                ViewBag.Operator = "+";
-                break;
-            case Operators.Sub:
-                ViewBag.Result = a - b;
-                ViewBag.Operator = "-";
-                break;
-            case Operators.Div:
-                ViewBag.Result = a / b;
-                ViewBag.Operator = "/";
-                break;
-            case Operators.Mul:
-                ViewBag.Result = a * b;
-                ViewBag.Operator = "*";
-                break;
-        }
-
-        return View();
-    }
-
-    public IActionResult Age( DateTime datauro, DateTime datatera)
-    {
-        ViewBag.urodziny = datauro;
-        ViewBag.teraz = datatera;
-        int age =datatera.Year - datauro.Year ;
-        if (datatera.Month < datauro.Month)
-        {
-            age --;
-        }
-
-        ViewBag.Result = age;
-        
-        
-
-        return View();
-    }
     public IActionResult Index()
     {
         return View();
+    }
+public IActionResult Calculator(Operator? op, double? a, double? b)
+    {
+        if (a == null || b == null)
+        {
+            ViewBag.ErrorMessage = "Niepoprawny format liczby a lub liczby b";
+            return View("CustomError");
+        }
+
+        if (!op.HasValue)
+        {
+            ViewBag.ErrorMessage = "Nieznany operator.";
+            return View("Calculator");
+        }
+
+        ViewBag.Op = op;
+        ViewBag.A = a;
+        ViewBag.B = b;
+
+        switch (op)
+        {
+            case Operator.Add:
+                ViewBag.Result = a + b;
+                ViewBag.Operator = "+";
+                break;
+            case Operator.Sub:
+                ViewBag.Result = a - b;
+                ViewBag.Operator = "-";
+                break;
+            case Operator.Mul:
+                ViewBag.Result = a * b;
+                ViewBag.Operator = "*";
+                break;
+            case Operator.Div:
+                if (b == 0)
+                {
+                    ViewBag.ErrorMessage = "Nie można dzielić przez zero.";
+                    return View("CustomError");
+                }
+                ViewBag.Result = a / b;
+                ViewBag.Operator = "/";
+                break;
+            default:
+                ViewBag.ErrorMessage = "Nieznany operator.";
+                return View("CustomError");
+        }
+
+        return View();
+    }
+    public int Age(DateTime birth, DateTime future)
+    {
+        if (birth > future)
+        {
+            throw new ArgumentException("Data urodzenia musi być wcześniej niż data future");
+        }
+        int age = future.Year - birth.Year;
+        if (future < birth.AddYears(age))
+        {
+            age--;
+        }
+        
+        return age;
+    }
+
+    public IActionResult AgeCalculator(DateTime birth, DateTime future)
+    {
+        try
+        {
+            int age = Age(birth, future);
+            ViewBag.Age = age;
+            return View(age);
+        }
+        catch (ArgumentException ex)
+        {
+            ViewBag.Error = ex.Message;
+            return View("Error");
+        }
     }
 
     public IActionResult Privacy()
@@ -91,11 +106,7 @@ public class HomeController : Controller
         return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
     }
 }
-
-public enum Operators
+public enum Operator
 {
-    Add,
-    Sub,
-    Div,
-    Mul
-}
+    Unknown, Add, Mul, Sub, Div
+}   

@@ -36,14 +36,14 @@ public class AppDbContext : DbContext
                     Id = 101,
                     Name = "WSEI",
                     NIP = "283792834",
-                    REGION = "2837294234"
+                    REGON = "2837294234"
                 },
                 new OrganizationEntity
                 {
                     Id = 102,
                     Name = "PKP",
                     NIP = "283792834",
-                    REGION = "2837294234"
+                    REGON = "2837294234"
                 }
             );
 

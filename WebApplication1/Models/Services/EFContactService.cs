@@ -31,7 +31,7 @@ public class EFContactService : IContactServices
 
     public List<ContactModel> GetAll()
     {
-        return _context.Contacts     //tu blad jakis
+        return _context.Contacts
             .Select(e => ContactMapper.FromEntity(e))
             .ToList();
     }

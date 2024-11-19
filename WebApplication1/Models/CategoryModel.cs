@@ -1,10 +1,13 @@
 using System.ComponentModel.DataAnnotations;
+
+namespace WebApplication1.Models;
+
 public enum CategoryModel
 {
     [Display(Name = "Rodzina", Order = 1)]
-    Family = 1,
-    [Display(Name = "Znajomi", Order = 3)]
-    Friend = 3,
+    Family, 
+    [Display(Name = "Przyjaciele", Order = 3)]
+    Friend, 
     [Display(Name = "Kontakt zawodowy", Order = 2)]
-    Job = 2,
+    Business,
 }
