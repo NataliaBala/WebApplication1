@@ -9,15 +9,18 @@ public class ProductionCompaniesController : Controller
 {
     private readonly ApplicationDbContext _context;
     private const int PageSize = 10;
-
+   
     public ProductionCompaniesController(ApplicationDbContext context)
     {
         _context = context;
     }
-
+         
+   
+    
     public async Task<IActionResult> Index(int? pageNumber, string sortOrder, string searchString)
     {
         ViewData["CurrentSort"] = sortOrder;
+        
         ViewData["NameSortParm"] = string.IsNullOrEmpty(sortOrder) ? "name_desc" : "";
         ViewData["CurrentFilter"] = searchString;
 
@@ -38,7 +41,7 @@ public class ProductionCompaniesController : Controller
         };
 
         return View(await PaginatedList<ProductionCompany>.CreateAsync(companies, pageNumber ?? 1, PageSize));
-    }
+    }  
 
     public async Task<IActionResult> Movies(long id, int? pageNumber)
     {

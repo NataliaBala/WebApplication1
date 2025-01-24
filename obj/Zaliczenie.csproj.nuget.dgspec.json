@@ -1,24 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\lukas\\RiderProjects\\Zaliczenie\\Zaliczenie\\Zaliczenie.csproj": {}
+    "C:\\Users\\balan\\OneDrive\\Pulpit\\WebApplication1\\Zaliczenie.csproj": {}
   },
   "projects": {
-    "C:\\Users\\lukas\\RiderProjects\\Zaliczenie\\Zaliczenie\\Zaliczenie.csproj": {
+    "C:\\Users\\balan\\OneDrive\\Pulpit\\WebApplication1\\Zaliczenie.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\lukas\\RiderProjects\\Zaliczenie\\Zaliczenie\\Zaliczenie.csproj",
+        "projectUniqueName": "C:\\Users\\balan\\OneDrive\\Pulpit\\WebApplication1\\Zaliczenie.csproj",
         "projectName": "Zaliczenie",
-        "projectPath": "C:\\Users\\lukas\\RiderProjects\\Zaliczenie\\Zaliczenie\\Zaliczenie.csproj",
-        "packagesPath": "C:\\Users\\lukas\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\lukas\\RiderProjects\\Zaliczenie\\Zaliczenie\\obj\\",
+        "projectPath": "C:\\Users\\balan\\OneDrive\\Pulpit\\WebApplication1\\Zaliczenie.csproj",
+        "packagesPath": "C:\\Users\\balan\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\balan\\OneDrive\\Pulpit\\WebApplication1\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-        ],
         "configFilePaths": [
-          "C:\\Users\\lukas\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Users\\balan\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -42,9 +38,8 @@
         "restoreAuditProperties": {
           "enableAudit": "true",
           "auditLevel": "low",
-          "auditMode": "direct"
-        },
-        "SdkAnalysisLevel": "9.0.100"
+          "auditMode": "all"
+        }
       },
       "frameworks": {
         "net9.0": {
@@ -90,7 +85,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.102/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Users\\balan\\.dotnet\\sdk\\9.0.100/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

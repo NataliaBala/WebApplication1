@@ -209,3 +209,15 @@ C:\Users\lukas\RiderProjects\Zaliczenie\Zaliczenie\obj\Debug\net9.0\refint\Zalic
 C:\Users\lukas\RiderProjects\Zaliczenie\Zaliczenie\obj\Debug\net9.0\Zaliczenie.pdb
 C:\Users\lukas\RiderProjects\Zaliczenie\Zaliczenie\obj\Debug\net9.0\Zaliczenie.genruntimeconfig.cache
 C:\Users\lukas\RiderProjects\Zaliczenie\Zaliczenie\obj\Debug\net9.0\ref\Zaliczenie.dll
+C:\Users\balan\OneDrive\Pulpit\WebApplication1\obj\Debug\net9.0\Zaliczenie.csproj.AssemblyReference.cache
+C:\Users\balan\OneDrive\Pulpit\WebApplication1\obj\Debug\net9.0\Zaliczenie.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\balan\OneDrive\Pulpit\WebApplication1\obj\Debug\net9.0\Zaliczenie.AssemblyInfoInputs.cache
+C:\Users\balan\OneDrive\Pulpit\WebApplication1\obj\Debug\net9.0\Zaliczenie.AssemblyInfo.cs
+C:\Users\balan\OneDrive\Pulpit\WebApplication1\obj\Debug\net9.0\Zaliczenie.csproj.CoreCompileInputs.cache
+C:\Users\balan\OneDrive\Pulpit\WebApplication1\obj\Debug\net9.0\Zaliczenie.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\balan\OneDrive\Pulpit\WebApplication1\obj\Debug\net9.0\Zaliczenie.RazorAssemblyInfo.cache
+C:\Users\balan\OneDrive\Pulpit\WebApplication1\obj\Debug\net9.0\Zaliczenie.RazorAssemblyInfo.cs
+C:\Users\balan\OneDrive\Pulpit\WebApplication1\obj\Debug\net9.0\Zaliczenie.sourcelink.json
+C:\Users\balan\OneDrive\Pulpit\WebApplication1\obj\Debug\net9.0\Zaliczenie.dll
+C:\Users\balan\OneDrive\Pulpit\WebApplication1\obj\Debug\net9.0\refint\Zaliczenie.dll
+C:\Users\balan\OneDrive\Pulpit\WebApplication1\obj\Debug\net9.0\Zaliczenie.pdb
